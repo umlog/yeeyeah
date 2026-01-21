@@ -1,0 +1,39 @@
+/* ===========================================
+   CSS Variables - Theme Configuration
+   =========================================== */
+
+:root {
+    --primary: #0891b2;
+    --primary-light: #06d6d0;
+    --accent: #00d9ff;
+    --dark-bg: #0f172a;
+    --dark-surface: #1e293b;
+    --light-bg: #f8fafc;
+    --light-surface: #ffffff;
+    --text-dark: #1e293b;
+    --text-light: #64748b;
+    --danger: #ef4444;
+    --info: #3b82f6;
+}
+
+html[data-theme="dark"] {
+    --primary: #22d3ee;
+    --primary-light: #06d6d0;
+    --accent: #00d9ff;
+    --bg: var(--dark-bg);
+    --surface: var(--dark-surface);
+    --text: #f1f5f9;
+    --text-secondary: #cbd5e1;
+    --border: #334155;
+}
+
+html[data-theme="light"] {
+    --primary: #0891b2;
+    --primary-light: #06d6d0;
+    --accent: #00d9ff;
+    --bg: var(--light-bg);
+    --surface: var(--light-surface);
+    --text: var(--text-dark);
+    --text-secondary: var(--text-light);
+    --border: #e2e8f0;
+}
